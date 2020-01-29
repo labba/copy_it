@@ -10,7 +10,7 @@ int copy_it(char *input)
 	int quotation = FALSE;
 	int rquote = FALSE;
     
-    if( c == NULL || *c == NULL)
+    if( c == null || *c == null)
         return -1;
 	
 	while((c = *p++) != '\0')
