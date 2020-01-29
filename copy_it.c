@@ -40,7 +40,7 @@ int copy_it(char *input)
 	if (quotation)
 		*d++ = '>';
     
-    return 0;
+    return rquote;
 }
 	
 
