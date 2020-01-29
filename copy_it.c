@@ -4,13 +4,11 @@
 
 int copy_it(char *input)
 {
-	char lbuf[BUFFERSIZE];
+	char lbuf[BUFFERSIZE]="";
 	char c, *p = input, *d = &lbuf[0];
 	char *ulimit = &lbuf[BUFFERSIZE-10];
 	int quotation = FALSE;
 	int rquote = FALSE;
-
-	memset(lbuf, 0, BUFFERSIZE);
 	
 	while((c = *p++) != '\0')
 	{
