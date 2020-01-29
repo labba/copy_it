@@ -9,6 +9,9 @@ int copy_it(char *input)
 	char *ulimit = &lbuf[BUFFERSIZE-10];
 	int quotation = FALSE;
 	int rquote = FALSE;
+    
+    if( c == NULL || *c == NULL)
+        return -1;
 	
 	while((c = *p++) != '\0')
 	{
